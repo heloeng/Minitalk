@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-unsigned long	ft_print_pointer(void *p)
+int	ft_print_pointer(void *p)
 {
 	unsigned long	len;
 	unsigned long	pnt;

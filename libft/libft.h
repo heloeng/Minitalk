@@ -51,15 +51,14 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		*ft_itoa(int n);
 char		*ft_strtrim(char const *s1, char const *set);
 char		**ft_split(char const *s, char c);
-unsigned long	ft_print_pointer(void *p);
-int				ft_printf(const char *str, ...);
-int				ft_formats(char c, va_list args);
-int				ft_printchar(char c);
-int				ft_print_dec_int(int n);
-int				ft_print_dec_unsigned(unsigned int n);
-int				ft_print_hexa_lower(unsigned long n);
-int				ft_print_hexa_upper(unsigned long n);
-int				ft_print_string(char *str);
-
+int			ft_print_pointer(void *p);
+int			ft_printf(const char *str, ...);
+int			ft_formats(char c, va_list args);
+int			ft_printchar(char c);
+int			ft_print_dec_int(int n);
+int			ft_print_dec_unsigned(unsigned int n);
+int			ft_print_hexa_lower(unsigned long n);
+int			ft_print_hexa_upper(unsigned long n);
+int			ft_print_string(char *str);
 
 #endif

@@ -27,11 +27,11 @@ static	int	count_substring(char const *s, char c)
 		{
 			count++;
 			while (s[i] != c && s[i])
-			i++;
+				i++;
 		}
 	}
 	return (count);
-}		
+}
 
 static char	*ft_copy_string(char const *s, char c)
 {
@@ -74,7 +74,7 @@ char	**ft_split(char const *s, char c)
 	while (++i < strs_len)
 	{
 		while (*s == c)
-		s++;
+			s++;
 		ptr[i] = ft_copy_string(s, c);
 		if (!(ptr[i]))
 		{

@@ -1,6 +1,8 @@
 //incluir cabeçalho
+
 #include "minitalk.h"
 
+//store_or_finish_char - armazenar ou terminar o char
 int	store_or_finish_char(char **str, char *c, int *bit_c, siginfo_t *info)
 {
 	char	*temp;
@@ -23,6 +25,7 @@ int	store_or_finish_char(char **str, char *c, int *bit_c, siginfo_t *info)
 	return (1);
 }
 
+//receber_bits_por_sinais_e_formar_um_caracter
 void	receive_bits_build_char(int signal, siginfo_t *info, void *context)
 {
 	static char		c = 0;
